@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app {
+  width: 100%;
+}
+
+.hero {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 600px;
+  font-size: 22px;
+  color: #b3b3b3;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+
+  background-color: white;
+  color: black;
+
+  font-size: 18px;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  transform: scale(1.05);
+}
+
+section {
+  padding: 80px 10%;
+}
+
+.sobre,
+.tecnologias,
+.projetos,
+.contato {
+  background-color: #282188;
+
+  border: 1px solid #2a2a2a;
+
+  border-radius: 25px;
+
+  padding: 50px;
+
+  margin-bottom: 40px;
+
+  transition: 0.3s;
+}
+
+
+.sobre:hover,
+.tecnologias:hover,
+.projetos:hover,
+.contato:hover {
+  transform: translateY(-5px);
+
+  border-color: #3a3a3a;
+}
+
+
+section h2 {
+  font-size: 42px;
+
+  margin-bottom: 30px;
+}
+
+
+section p {
+  color: #b3b3b3;
+
+  line-height: 1.8;
+
+  font-size: 18px;
+}
+
+.cards-tech {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #1c1c1c;
+  padding: 20px 30px;
+  border-radius: 12px;
+}
+
+.cards-projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 20px;
+}
+
+.projeto-card {
+  background-color: #1c1c1c;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.projeto-card h3 {
+  margin-bottom: 15px;
+}
+
+.contato {
+  text-align: center;
+}
+
+.navbar {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 25px 10%;
+
+  position: fixed;
+  top: 0;
+
+  background-color: #282188;
+
+  backdrop-filter: blur(10px);
+
+  z-index: 1000;
+}
+
+
+.social-links {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+
+  margin-top: 30px;
+}
+
+.social-links img {
+  width: 40px;
+  height: 40px;
+
+  object-fit: contain;
+
+  transition: 0.3s;
+
+  cursor: pointer;
+}
+
+.social-links img:hover {
+  transform: scale(1.15);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #999;
+}
